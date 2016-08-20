@@ -13,12 +13,16 @@ namespace FMI_overflowed.Controllers
             return View();
         }
 
-        public ActionResult Post()
+        public ActionResult MathPosts()
+        {
+            return View();
+        }
+        public ActionResult ProgrammingPosts()
         {
             return View();
         }
 
-        public ActionResult FunPost()
+        public ActionResult FunPosts()
         {
             return View();
         }

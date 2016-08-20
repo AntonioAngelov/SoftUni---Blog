@@ -265,8 +265,9 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\FunPost.cshtml" />
-    <Content Include="Views\Home\Post.cshtml" />
+    <Content Include="Views\Home\FunPosts.cshtml" />
+    <Content Include="Views\Home\MathPosts.cshtml" />
+    <Content Include="Views\Home\ProgrammingPosts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
