@@ -69,8 +69,12 @@ namespace FMI_overflowed.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
+
+        [Display(Name = "Username")]
+        public string FullName { get; set; }
+        
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 1)]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 4)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }
@@ -78,11 +82,7 @@ namespace FMI_overflowed.Models
         [DataType(DataType.Password)]
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string ConfirmPassword { get; set; }
-
-        
-        [Display(Name = "Full Name")]
-        public string FullName { get; set; }
+        public string ConfirmPassword { get; set; }     
 
     }
 
@@ -94,7 +94,7 @@ namespace FMI_overflowed.Models
         public string Email { get; set; }
 
         [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 1)]
+        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 4)]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public string Password { get; set; }

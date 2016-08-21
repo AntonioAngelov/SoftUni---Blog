@@ -160,4 +160,8 @@ C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI o
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+<<<<<<< HEAD
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.csprojResolveAssemblyReference.cache
+=======
+C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.csprojResolveAssemblyReference.cache
+>>>>>>> 2b07a2194438428f014459f1ccfb6dc8e3470227
