@@ -79,7 +79,6 @@ C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed
 C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.dll
 C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.pdb
-C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.csprojResolveAssemblyReference.cache
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.dll
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.pdb
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\ApplicationInsights.config
@@ -161,3 +160,4 @@ C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI o
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.csprojResolveAssemblyReference.cache

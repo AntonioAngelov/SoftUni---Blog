@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FMI_overflowed.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,11 +12,14 @@ namespace FMI_overflowed.Controllers
         public ActionResult Index()
         {
             return View();
+
         }
 
         public ActionResult MathPosts()
         {
-            return View();
+            var db = new ApplicationDbContext();
+            var post = db.Post.OrderByDescending(p => p.Date).Take(3);
+            return View(post.ToList());
         }
         public ActionResult ProgrammingPosts()
         {

@@ -11,6 +11,8 @@ namespace FMI_overflowed.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Post> Post { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -20,5 +22,7 @@ namespace FMI_overflowed.Models
         {
             return new ApplicationDbContext();
         }
+        
+
     }
 }
