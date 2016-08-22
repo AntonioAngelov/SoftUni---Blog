@@ -8,7 +8,7 @@
     <h1>Fun Section</h1>
     <p class="lead">The fun place.</p>
 </div>
-    @Html.ActionLink("Create New", "Create")
+   @Html.ActionLink("Create new post", "Create", "Posts")
 
 
 <table class="table">
@@ -26,7 +26,7 @@
             @Html.DisplayNameFor(model => model.Section)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Author)
+            @Html.DisplayNameFor(model => model.Author.FullName)
         </th>
         
     </tr>

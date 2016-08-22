@@ -50,6 +50,7 @@ namespace FMI_overflowed.Controllers
         {
             if (ModelState.IsValid)
             {
+                post.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
                 db.Post.Add(post);
                 db.SaveChanges();
                 return RedirectToAction("Index");
