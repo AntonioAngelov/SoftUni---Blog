@@ -38,7 +38,16 @@
             @Html.DisplayFor(modelItem => item.Date)
         </td>
         <td>
+
             @Html.DisplayFor(modelItem => item.Section)
+        </td>
+        <td>
+            @if (item.Author == null)
+            {
+                <i>No Author</i>
+            }
+            @Html.DisplayFor(modelItem => item.Author.FullName)
+
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

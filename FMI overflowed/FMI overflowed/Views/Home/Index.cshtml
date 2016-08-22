@@ -2,26 +2,33 @@
     ViewBag.Title = "Home Page";
 }
 
+@model IEnumerable<FMI_overflowed.Models.Post>
+
 <div class="jumbotron">
     <h1>FMI overflowed</h1>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Recent in Math</h2>
-        <p>
-            Topic by Person's name from Date
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Read more&raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Recent in Programming</h2>
-        <p>Topic by Person's name from Date</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Read more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Recent in Fun</h2>
-        <p>Topic by Person's name from Date</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Read more &raquo;</a></p>
-    </div>
+
+    @foreach (var post in Model)
+    {
+        <div class="col-md-4">
+            <h2>Recent in Math</h2>
+            <p>
+                Title: @post.Title  
+            <p>
+                @if (@post.Author != null)
+                {
+                    @:by <i>@post.Author.FullName</i>
+
+                }
+                @post.Date
+            </p>
+
+             <p>
+                <a> @post.Body</a>
+            </p>
+        </div>
+    }
+
 </div>

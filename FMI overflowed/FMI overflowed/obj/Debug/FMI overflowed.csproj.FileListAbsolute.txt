@@ -24,6 +24,7 @@ C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI o
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.AI.Web.dll
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.AI.WindowsServer.dll
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.ApplicationInsights.TraceListener.dll
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.AspNet.Identity.Owin.dll
@@ -53,6 +54,7 @@ C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI o
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.AI.Web.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.ApplicationInsights.TraceListener.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\System.Web.Helpers.xml
 C:\Users\Antoniya\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\System.Web.Mvc.xml

@@ -17,7 +17,7 @@ namespace FMI_overflowed.Controllers
         // GET: Posts
         public ActionResult Index()
         {
-            return View(db.Post.ToList());
+            return View(db.Post.Include(p => p.Author).ToList());
         }
 
         // GET: Posts/Details/5
@@ -83,6 +83,7 @@ namespace FMI_overflowed.Controllers
         {
             if (ModelState.IsValid)
             {
+                post.Author = db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
                 db.Entry(post).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
