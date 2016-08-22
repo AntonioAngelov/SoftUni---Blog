@@ -20,7 +20,10 @@ namespace FMI_overflowed.Models
         public string Title { get; set; }
         [Required]
         public string Body { get; set; }
+        
         public DateTime Date { get; set; }
+        
+        public string Section { get; set; }
         public ApplicationUser Author { get; set; }
     }
 }

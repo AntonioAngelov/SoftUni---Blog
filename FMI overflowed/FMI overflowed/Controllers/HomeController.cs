@@ -15,15 +15,17 @@ namespace FMI_overflowed.Controllers
 
         }
 
-        public ActionResult MathPosts()
+        public ActionResult AllPosts()
         {
             var db = new ApplicationDbContext();
-            var post = db.Post.OrderByDescending(p => p.Date).Take(3);
+            var post = db.Post.OrderByDescending(p => p.Date).Take(15);
             return View(post.ToList());
         }
         public ActionResult ProgrammingPosts()
         {
-            return View();
+            var db = new ApplicationDbContext();
+            var post = db.Post.OrderByDescending(p => p.Date).Take(15);
+            return View(post.ToList());
         }
 
         public ActionResult FunPosts()
