@@ -18,7 +18,7 @@ namespace FMI_overflowed.Controllers
             return View(latestPost);
         }
 
-        public ActionResult AllPosts()
+        public ActionResult MathPosts()
         {
             var db = new ApplicationDbContext();
             var post = db.Post.OrderByDescending(p => p.Date).Take(15);
@@ -33,7 +33,9 @@ namespace FMI_overflowed.Controllers
 
         public ActionResult FunPosts()
         {
-            return View();
+            var db = new ApplicationDbContext();
+            var post = db.Post.OrderByDescending(p => p.Date).Take(15);
+            return View(post.ToList());
         }
 
     }

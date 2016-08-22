@@ -1,7 +1,8 @@
 ﻿@{
     ViewBag.Title = "Posts about Programming";
 }
-@model List<FMI_overflowed.Models.Post>
+
+@model IEnumerable<FMI_overflowed.Models.Post>
 @Html.ActionLink("Create", "Create", "Posts")
 
 
@@ -10,27 +11,62 @@
 
 <div class="jumbotron">
     <h1>Programming Section</h1>
-    <p class="lead">This is the place for all your math questions.</p>
+    <p class="lead">This is the place for all your programming questions.</p>
 </div>
 
 
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Body)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Section)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author)
+        </th>
+        <th></th>
+    </tr>
 
-
-<section class="row">
-    @foreach (var post in Model)
+    @foreach (var item in Model)
     {
-            <article class="col-md-4">
-                <h2 class="title">@post.Title</h2>
-                <div class="about">
-                    Posted on <i>@post.Date</i>
-                    @if (post.Author != null)
-                {
-                        @:by <i>@post.Author.FullName (@post.Author.UserName)</i>
-                }
+        if (item.Section == "Programming")
+        {       <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Body)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
 
-                </div>
-                <div class="body">@post.Body </div>
-            </article>
-       
+                @Html.DisplayFor(modelItem => item.Section)
+            </td>
+            <td>
+                @if (item.Author == null)
+                {
+                    <i>No Author</i>
+                }
+                @Html.DisplayFor(modelItem => item.Author.FullName)
+
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+        }
     }
-</section>
+
+</table>

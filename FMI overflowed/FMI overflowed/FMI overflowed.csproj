@@ -276,7 +276,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\FunPosts.cshtml" />
-    <Content Include="Views\Home\AllPosts.cshtml" />
+    <Content Include="Views\Home\MathPosts.cshtml" />
     <Content Include="Views\Home\ProgrammingPosts.cshtml" />
     <Content Include="Views\Posts\Create.cshtml" />
     <Content Include="Views\Posts\Delete.cshtml" />
