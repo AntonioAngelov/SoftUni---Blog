@@ -81,4 +81,3 @@ C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed
 C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.pdb
 C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.ApplicationInsights.TraceListener.dll
 C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\bin\Microsoft.ApplicationInsights.TraceListener.xml
-C:\Users\anton\OneDrive\Documents\GitHub\SoftUni-TechModule-Forum\FMI overflowed\FMI overflowed\obj\Debug\FMI overflowed.csprojResolveAssemblyReference.cache
