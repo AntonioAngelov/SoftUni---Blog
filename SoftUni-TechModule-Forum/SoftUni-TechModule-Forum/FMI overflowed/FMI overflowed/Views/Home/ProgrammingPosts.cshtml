@@ -7,7 +7,7 @@
 @model IEnumerable<Post>
 
 <div class="jumbotron">
-    <h1>Programming Section</h1>
+    <h1 class="title">Programming Section</h1>
     <p class="lead">This is the place for all your programming questions.</p>
 </div>
 @Html.ActionLink("Create new post", "Create", "Posts")
@@ -38,8 +38,8 @@
         if (item.Section == "Programming")
         {       <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
+                <a href="/Posts/Details/@item.Id"> @Html.DisplayFor(modelItem => item.Title)</a>
+</td>
             <td>
                 @Utils.CutText(item.Body)
             </td>

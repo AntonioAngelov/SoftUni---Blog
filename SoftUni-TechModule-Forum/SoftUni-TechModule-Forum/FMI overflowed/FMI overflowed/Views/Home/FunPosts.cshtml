@@ -8,7 +8,7 @@
 }
 
 <div class="jumbotron">
-    <h1>Fun Section</h1>
+    <h1 class="title">Fun Section</h1>
     <p class="lead">The fun place.</p>
 </div>
    @Html.ActionLink("Create new post", "Create", "Posts")
@@ -39,8 +39,8 @@
     if (item.Section == "Fun")
     {<tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
+            <a href="/Posts/Details/@item.Id">@Html.DisplayFor(modelItem => item.Title)</a>
+</td>
         <td>
             @Utils.CutText(item.Body)
         </td>

@@ -8,13 +8,13 @@
 
 
 <div class="jumbotron">
-    <h1>FMI overflowed</h1>
+    <h1 class="title">FMI overflowed</h1>
 </div>
 
 
    <section class="row">
     <article class="col-md-4">
-        <div>Math</div>
+        <h1 class="title">Latest in Math</h1>
 
         <section class="row">
             @foreach (var post in Model)
@@ -22,18 +22,17 @@
                 
                 if (post.Section =="Math"&& post.Section!=null)
                 {   <article class="col-md-4">
-                    <h2 class="title">@post.Title</h2>
-                    <div class="about">
-                        Posted on <i>@post.Date</i>
+                        <h3 class="title"><a href="/Posts/Details/@post.Id">@post.Title</a></h3>
+                    <div class="about">                    
                         @if (post.Author != null)
                         {
                             @:by <i>@post.Author.FullName (@post.Author.UserName)</i>
-                }
+                        }
 
                     </div>
-                    <div class="body">@Utils.CutText(post.Body) </div>
-                    <div class="section">@post.Section </div>
-                </article>
+                        <div class="body">@Utils.CutText(post.Body) </div>
+                        From <i>@post.Date</i>
+                    </article>
 
                     break;
                 }
@@ -46,23 +45,22 @@
 
 
     <article class="col-md-4">
-        <div>Programming</div>
+        <h1 class="title">Latest in Programming</h1>
         <section class="row">
             @foreach (var post in Model)
             {
                 if (post.Section == "Programming")
                 {   <article class="col-md-4">
-                    <h2 class="title">@post.Title</h2>
+                    <h3 class="title"><a href="/Posts/Details/@post.Id">@post.Title</a></h3>
                     <div class="about">
-                        Posted on <i>@post.Date</i>
                         @if (post.Author != null)
                         {
                             @:by <i>@post.Author.FullName (@post.Author.UserName)</i>
                 }
 
                     </div>
-                    <div class="body">@Utils.CutText(post.Body)</div>
-                    <div class="section">@post.Section </div>
+                        <div class="body">@Utils.CutText(post.Body)</div>
+                        From <i>@post.Date</i>
                 </article>
                     break;
                 }
@@ -70,23 +68,22 @@
         </section>
     </article>
     <article class="col-md-4">
-        <div>Fun</div>
+        <h1 class="title">Latest in Fun</h1>
         <section class="row">
             @foreach (var post in Model)
             {
                 if (post.Section == "Fun")
                 {   <article class="col-md-4">
-                    <h2 class="title">@post.Title</h2>
+                    <h3 class="title"><a href="/Posts/Details/@post.Id">@post.Title</a></h3>
                     <div class="about">
-                        Posted on <i>@post.Date</i>
                         @if (post.Author != null)
                         {
                             @:by <i>@post.Author.FullName (@post.Author.UserName)</i>
                 }
 
                     </div>
-                    <div class="body">@Utils.CutText(post.Body) </div>
-                    <div class="section">@post.Section </div>
+                        <div class="body">@Utils.CutText(post.Body) </div>
+                        From <i>@post.Date</i>
                 </article>
                     break;
                 }
