@@ -7,7 +7,7 @@
 @model IEnumerable<Post>
 
 <div class="jumbotron">
-    <h1>Math Section</h1>
+    <h1 class="title">Math Section</h1>
     <p class="lead">This is the place for all your math questions.</p>
 </div>
 @Html.ActionLink("Create new post", "Create", "Posts")
@@ -39,8 +39,8 @@
         {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
+            <a href="/Posts/Details/@item.Id">@Html.DisplayFor(modelItem => item.Title)</a>
+</td>
         <td>
             @Utils.CutText(item.Body)
         </td>
