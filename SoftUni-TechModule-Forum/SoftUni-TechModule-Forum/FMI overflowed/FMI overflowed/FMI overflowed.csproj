@@ -204,7 +204,6 @@
     <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\MathController.cs" />
     <Compile Include="Controllers\PostsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -215,7 +214,6 @@
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Math.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -286,11 +284,6 @@
     <Content Include="Views\Posts\Details.cshtml" />
     <Content Include="Views\Posts\Edit.cshtml" />
     <Content Include="Views\Posts\Index.cshtml" />
-    <Content Include="Views\Math\Create.cshtml" />
-    <Content Include="Views\Math\Delete.cshtml" />
-    <Content Include="Views\Math\Details.cshtml" />
-    <Content Include="Views\Math\Edit.cshtml" />
-    <Content Include="Views\Math\Index.cshtml" />
     <Content Include="Views\Comments\Create.cshtml" />
     <Content Include="Views\Comments\Delete.cshtml" />
     <Content Include="Views\Comments\Details.cshtml" />
