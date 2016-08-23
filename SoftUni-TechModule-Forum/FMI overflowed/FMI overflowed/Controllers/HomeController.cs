@@ -14,27 +14,28 @@ namespace FMI_overflowed.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
-            var latestPost = db.Post.Include(p => p.Author).OrderByDescending(p => p.Date).Take(1);
-            return View(latestPost);
+            var db = new ApplicationDbContext();
+            var post = db.Post.OrderByDescending(p => p.Date).Take(100);
+            return View(post.ToList());
         }
 
         public ActionResult MathPosts()
         {
             var db = new ApplicationDbContext();
-            var post = db.Post.OrderByDescending(p => p.Date).Take(15);
+            var post = db.Post.Include(p => p.Author).OrderByDescending(p => p.Date).Take(15);
             return View(post.ToList());
         }
         public ActionResult ProgrammingPosts()
         {
             var db = new ApplicationDbContext();
-            var post = db.Post.OrderByDescending(p => p.Date).Take(15);
+            var post = db.Post.Include(p => p.Author).OrderByDescending(p => p.Date).Take(15);
             return View(post.ToList());
         }
 
         public ActionResult FunPosts()
         {
             var db = new ApplicationDbContext();
-            var post = db.Post.OrderByDescending(p => p.Date).Take(15);
+            var post = db.Post.Include(p => p.Author).OrderByDescending(p => p.Date).Take(15);
             return View(post.ToList());
         }
 

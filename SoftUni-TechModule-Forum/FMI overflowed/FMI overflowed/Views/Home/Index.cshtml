@@ -1,34 +1,109 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@using FMI_overflowed.Classes;
+@using FMI_overflowed.Models;
+@model IEnumerable<Post>
 
-@model IEnumerable<FMI_overflowed.Models.Post>
+
 
 <div class="jumbotron">
     <h1>FMI overflowed</h1>
 </div>
 
-<div class="row">
 
-    @foreach (var post in Model)
-    {
-        <div class="col-md-4">
-            <h2>Recent in Math</h2>
-            <p>
-                Title: @post.Title  
-            <p>
-                @if (@post.Author != null)
-                {
-                    @:by <i>@post.Author.FullName</i>
+   <section class="row">
+    <article class="col-md-4">
+        <div>Math</div>
 
+        <section class="row">
+            @foreach (var post in Model)
+            {
+                
+                if (post.Section =="Math"&& post.Section!=null)
+                {   <article class="col-md-4">
+                    <h2 class="title">@post.Title</h2>
+                    <div class="about">
+                        Posted on <i>@post.Date</i>
+                        @if (post.Author != null)
+                        {
+                            @:by <i>@post.Author.FullName (@post.Author.UserName)</i>
                 }
-                @post.Date
-            </p>
 
-             <p>
-                <a> @post.Body</a>
-            </p>
-        </div>
-    }
+                    </div>
+                    <div class="body">@Utils.CutText(post.Body) </div>
+                    <div class="section">@post.Section </div>
+                </article>
 
-</div>
+                    break;
+                }
+
+            }
+        </section>
+    </article>
+
+
+
+
+    <article class="col-md-4">
+        <div>Programming</div>
+        <section class="row">
+            @foreach (var post in Model)
+            {
+                if (post.Section == "Programming")
+                {   <article class="col-md-4">
+                    <h2 class="title">@post.Title</h2>
+                    <div class="about">
+                        Posted on <i>@post.Date</i>
+                        @if (post.Author != null)
+                        {
+                            @:by <i>@post.Author.FullName (@post.Author.UserName)</i>
+                }
+
+                    </div>
+                    <div class="body">@Utils.CutText(post.Body)</div>
+                    <div class="section">@post.Section </div>
+                </article>
+                    break;
+                }
+            }
+        </section>
+    </article>
+    <article class="col-md-4">
+        <div>Fun</div>
+        <section class="row">
+            @foreach (var post in Model)
+            {
+                if (post.Section == "Fun")
+                {   <article class="col-md-4">
+                    <h2 class="title">@post.Title</h2>
+                    <div class="about">
+                        Posted on <i>@post.Date</i>
+                        @if (post.Author != null)
+                        {
+                            @:by <i>@post.Author.FullName (@post.Author.UserName)</i>
+                }
+
+                    </div>
+                    <div class="body">@Utils.CutText(post.Body) </div>
+                    <div class="section">@post.Section </div>
+                </article>
+                    break;
+                }
+            }
+        </section>
+    </article>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    
