@@ -2,7 +2,9 @@
     ViewBag.Title = "Posts about Math";
 }
 
-@model IEnumerable<FMI_overflowed.Models.Post>
+@using FMI_overflowed.Classes;
+@using FMI_overflowed.Models;
+@model IEnumerable<Post>
 
 <div class="jumbotron">
     <h1>Math Section</h1>
@@ -40,7 +42,7 @@
             @Html.DisplayFor(modelItem => item.Title)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Body)
+            @Utils.CutText(item.Body)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Date)
