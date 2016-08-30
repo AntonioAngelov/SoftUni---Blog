@@ -28,7 +28,7 @@ namespace FMI_overflowed.Models
 
         public ApplicationUser Author { get; set; }
         
-        public ICollection<Comment> Comments { get; set; }
+        
     }
 }
     
