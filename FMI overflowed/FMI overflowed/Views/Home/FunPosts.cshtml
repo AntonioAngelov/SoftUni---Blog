@@ -1,0 +1,87 @@
+﻿@using FMI_overflowed.Classes;
+@using FMI_overflowed.Models;
+@model IEnumerable<Post>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div>
+    <h1 class="title" style="font-family:'Lato';font-weight:900;color:#00af79;">Fun Section</h1>
+    <p class="lead"><i>The fun place.</i></p>
+</div>
+<div class="uvc-heading-spacer line_only" style="topheight:1px;">
+
+    <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 1px; border-color: rgb(86, 86, 86); width: 360px; float: left;"></span>
+</div>
+<<<<<<< HEAD:SoftUni-TechModule-Forum/FMI overflowed/FMI overflowed/Views/Home/FunPosts.cshtml
+<div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
+   @Html.ActionLink("Create new post", "Create", "Posts")
+=======
+   
+<p>
+    @Html.ActionLink("Create new post", "Create", "Posts")
+>>>>>>> 2a8eb33ff71eed81e9c637d19197581f777e025c:FMI overflowed/FMI overflowed/Views/Home/FunPosts.cshtml
+
+    @using (Html.BeginForm())
+    {
+    <p>
+        Search: @Html.TextBox("SearchString") <br />
+        <input type="submit" value="Filter" />
+    </p>
+    }
+    </p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Body)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Section)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Author.FullName)
+        </th>
+        
+    </tr>
+
+       @foreach (var item in Model)
+{
+    if (item.Section == "Fun")
+    {<tr>
+        <td>
+            <a href="/Posts/Details/@item.Id">@Html.DisplayFor(modelItem => item.Title)</a>
+</td>
+        <td>
+            @Utils.CutText(item.Body)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+
+            @Html.DisplayFor(modelItem => item.Section)
+        </td>
+        <td>
+            @if (item.Author == null)
+            {
+                <i>No Author</i>
+            }
+            @Html.DisplayFor(modelItem => item.Author.FullName)
+
+        </td>      
+        
+    </tr>
+    }
+}
+
+</table>
