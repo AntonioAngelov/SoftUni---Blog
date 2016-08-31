@@ -10,7 +10,17 @@
     <h1 class="title">Math Section</h1>
     <p class="lead">This is the place for all your math questions.</p>
 </div>
-@Html.ActionLink("Create new post", "Create", "Posts")
+<p>
+    @Html.ActionLink("Create new post", "Create", "Posts")
+
+    @using (Html.BeginForm())
+    {
+    <p>
+        Search: @Html.TextBox("SearchString") <br />
+        <input type="submit" value="Filter" />
+    </p>
+    }
+    </p>
 
 
 <table class="table">

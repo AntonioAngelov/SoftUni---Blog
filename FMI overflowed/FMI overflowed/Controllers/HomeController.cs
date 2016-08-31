@@ -19,23 +19,40 @@ namespace FMI_overflowed.Controllers
             return View(post.ToList());
         }
 
-        public ActionResult MathPosts()
+        public ActionResult MathPosts(string searchString)
         {
             var db = new ApplicationDbContext();
             var post = db.Post.Include(p => p.Author).OrderByDescending(p => p.Date).Take(15);
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                post = post.Where(s => s.Title.Contains(searchString));
+            }
+
             return View(post.ToList());
         }
-        public ActionResult ProgrammingPosts()
+        public ActionResult ProgrammingPosts(string searchString)
         {
             var db = new ApplicationDbContext();
             var post = db.Post.Include(p => p.Author).OrderByDescending(p => p.Date).Take(15);
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                post = post.Where(s => s.Title.Contains(searchString));
+            }
+
             return View(post.ToList());
         }
 
-        public ActionResult FunPosts()
+        public ActionResult FunPosts(string searchString)
         {
             var db = new ApplicationDbContext();
-            var post = db.Post.Include(p => p.Author).OrderByDescending(p => p.Date).Take(15);
+            var post = db.Post.Include(p => p.Author).OrderByDescending(p => p.Date).Take(15);       
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                post = post.Where(s => s.Title.Contains(searchString));
+            }
             return View(post.ToList());
         }
 

@@ -15,9 +15,17 @@ namespace FMI_overflowed.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
 
         // GET: Posts
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            return View(db.Post.Include(p => p.Author).ToList());
+            var posts = from m in db.Post
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                posts = posts.Where(s => s.Title.Contains(searchString));
+            }
+
+            return View(posts.Include(p => p.Author).ToList());
         }
 
 

@@ -11,8 +11,18 @@
     <h1 class="title">Fun Section</h1>
     <p class="lead">The fun place.</p>
 </div>
-   @Html.ActionLink("Create new post", "Create", "Posts")
+   
+<p>
+    @Html.ActionLink("Create new post", "Create", "Posts")
 
+    @using (Html.BeginForm())
+    {
+    <p>
+        Search: @Html.TextBox("SearchString") <br />
+        <input type="submit" value="Filter" />
+    </p>
+    }
+    </p>
 
 <table class="table">
     <tr>
