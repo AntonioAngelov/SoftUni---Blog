@@ -8,7 +8,12 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-
+.title
+{
+    font-family: 'Lato';
+    font-weight: 900;
+    color:#000000;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -21,4 +26,12 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+#main-slideshow {
+    position: relative;
+    z-index: 1;
+    clear: both;
+}
+#main-slideshow {
+    overflow: hidden;
 }

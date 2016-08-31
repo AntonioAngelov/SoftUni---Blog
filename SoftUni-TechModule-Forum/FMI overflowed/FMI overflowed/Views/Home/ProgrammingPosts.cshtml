@@ -6,10 +6,15 @@
 @using FMI_overflowed.Models;
 @model IEnumerable<Post>
 
-<div class="jumbotron">
-    <h1 class="title">Programming Section</h1>
-    <p class="lead">This is the place for all your programming questions.</p>
+<div>
+    <h1 class="title" style="font-family:'Lato';font-weight:900;color:#00af79;">Programming Section</h1>
+    <p class="lead"><i>This is the place for all your programming questions.</i></p>
 </div>
+<div class="uvc-heading-spacer line_only" style="topheight:1px;">
+
+    <span class="uvc-headings-line" style="border-style: solid; border-bottom-width: 1px; border-color: rgb(86, 86, 86); width: 440px; float: left;"></span>
+</div>
+<div class="vc_empty_space" style="height: 50px"><span class="vc_empty_space_inner"></span></div>
 @Html.ActionLink("Create new post", "Create", "Posts")
 
 
