@@ -1101,21 +1101,16 @@ textarea {
   line-height: inherit;
 }
 a {
-<<<<<<< HEAD:SoftUni-TechModule-Forum/FMI overflowed/FMI overflowed/Content/bootstrap.css
+
   color:#00af79;
-=======
-  color: #337ab7;
->>>>>>> 2a8eb33ff71eed81e9c637d19197581f777e025c:FMI overflowed/FMI overflowed/Content/bootstrap.css
+
   text-decoration: none;
 }
 a:hover,
 a:focus {
-<<<<<<< HEAD:SoftUni-TechModule-Forum/FMI overflowed/FMI overflowed/Content/bootstrap.css
-  color:#00af79
-;
-=======
-  color: #23527c;
->>>>>>> 2a8eb33ff71eed81e9c637d19197581f777e025c:FMI overflowed/FMI overflowed/Content/bootstrap.css
+
+  color:#00af79;
+
   text-decoration: underline;
 }
 a:focus {
@@ -4973,11 +4968,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-<<<<<<< HEAD:SoftUni-TechModule-Forum/FMI overflowed/FMI overflowed/Content/bootstrap.css
-  background-color: #80f3cc;
-=======
-  background-color: #eee;
->>>>>>> 2a8eb33ff71eed81e9c637d19197581f777e025c:FMI overflowed/FMI overflowed/Content/bootstrap.css
+
 }
 .jumbotron h1,
 .jumbotron .h1 {
