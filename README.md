@@ -1,2 +1,2 @@
-# SoftUni---Blog
+# SoftUni---Forum
 Teamwork Project
